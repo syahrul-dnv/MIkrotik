@@ -16,3 +16,24 @@ Netme akan memberikan contoh Langkah Setting MikroTik dasar dengan Modem Indihom
 Langkah pertama yang perlu anda ketahui ialah menentukan Topologi Jaringan sebelum mulai konfigurasi mikrotik.
 
 Buatlah desain topologi jaringan sesuai dengan kondisi dan rencana yang sudah di rencanakan.
+<img src="https://drive.google.com/uc?export=view&id=154YOmLOyIGHe4-GexgbFc8XA4WyspQib"/>
+
+
+<img src="https://drive.google.com/uc?export=view&id=14Wf5o_Mv6NncfNOvY5shF4Io-WHVt3RV"/>
+
+
+<img src="https://drive.google.com/uc?export=view&id=1TYn4m0n87Z6_qcmrOjTRUctwLiONay-C"/>
+
+
+<img src="https://drive.google.com/uc?export=view&id="/>
+
+
+<img src="https://drive.google.com/uc?export=view&id="/>
+
+
+<img src="https://drive.google.com/uc?export=view&id="/>
+
+
+
+<img src="https://drive.google.com/uc?export=view&id="/>
+
