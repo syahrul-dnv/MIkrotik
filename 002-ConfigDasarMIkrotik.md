@@ -113,9 +113,9 @@ Copy script diatas kemudian paste kedalam new terminal winbox.
 
 Atau setting dns di mikrotik lewat manual :
 
-
-<img src="https://drive.google.com/uc?export=view&id=1zvjp_1WVebVrUSeDuZFA46AUB1m_WZIF"/>
+<center><img src="https://drive.google.com/uc?export=view&id=1zvjp_1WVebVrUSeDuZFA46AUB1m_WZIF"/></center>
 setting dns di mikrotik
+
 ## 4. NAT – Network Address Translation
 Fungsi NAT ini ialah proses pemetaan alamat IP. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internat dengan menggunakan alamat IP public.
 Sehingga Semua perangkat bisa akses ke internet melalui MikroTik router. 
