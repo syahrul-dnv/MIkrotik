@@ -52,17 +52,38 @@ Default login mikrotik
 
 <pre>user: admin
 password: [tanpa password]</pre>
+<img src="https://drive.google.com/uc?export=view&id=14Wf5o_Mv6NncfNOvY5shF4Io-WHVt3RV"/>
 Login ke MikroTik dengan Mac address
 Setelah mac address sudah muncul, klik mac address tersebut dan isi kolom login menggunakan user: admin tanpa password.
 
 Kemudian Klik Connect….
 
 Jika berhasil login maka tampilan MikroTik di winbox seperti berikut :
-<img src="https://drive.google.com/uc?export=view&id=14Wf5o_Mv6NncfNOvY5shF4Io-WHVt3RV"/>
-
 
 <img src="https://drive.google.com/uc?export=view&id=1TYn4m0n87Z6_qcmrOjTRUctwLiONay-C"/>
+Default Konfigurasi MikroTik RouterOs
+Silahkan klik [Remove Configuration] untuk reset mikrotik agar semua setingan bawaan mikrotik terhapus.
 
+Atau bisa melakukan reset mikrotik manual dengan perintah :
+<pre>/system reset-configuration no-defaults=yes</pre>
+Buka new terminal dari menu samping Winbox, kemudian copy lalu pasti script diatas.
+
+Jika keluar peringatan : Dangerous! Reset anyway? [y/N]: …..
+
+Silahkan ketik Huruf ‘Y‘ kemudian [enter]….
+
+Tunggu beberapa detik sampai MikroTik selesai restart…
+
+Silahkan login kembali ke MikroTik dengan winbox seperti diatas.
+
+Setting IP address mikrotik pada setiap ether sesuai dengan Topologi diatas
+
+IP address anggaplah sebagai berikut, silahkan sesuaikan dengan IP yang sudah ditentukan:
+
+<li>IP modem Indihome 192.168.100.1</li>
+<li>ether1 – seting IP otomatis ( dhcp client ) dari modem indihome atau IP manual 192.168.100.2/24<li>
+<li>ether2 – IP manual 192.168.2.1/24</li>
+<li>>ether3 – IP manual 192.168.3.1/24</li>
 
 <img src="https://drive.google.com/uc?export=view&id=1bGCgtkmb6GA1nJpjVHbQ795VX-dx_iY8"/>
 
