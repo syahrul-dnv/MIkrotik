@@ -115,4 +115,15 @@ Atau setting dns di mikrotik lewat manual :
 
 
 <img src="https://drive.google.com/uc?export=view&id=1zvjp_1WVebVrUSeDuZFA46AUB1m_WZIF"/>
+setting dns di mikrotik
+## 4. NAT – Network Address Translation
+Fungsi NAT ini ialah proses pemetaan alamat IP. NAT mentranslasikan alamat IP private untuk dapat mengakses alamat host di internat dengan menggunakan alamat IP public.
+Sehingga Semua perangkat bisa akses ke internet melalui MikroTik router. 
+Berikut script nya, silahkan copy kemudian paste ke new terminal winbox:
 
+<pre>/ip firewall nat add chain=srcnat action=masquerade</pre>
+Itulah 4 Langkah cara setting dasar mikrotik dengan winbox dan script.
+
+Dengan Konfigurasi mikrotik dasar seperti ini, semua perangkat yang terhubung ke mikrotik sudah bisa akses ke internet. Agar komputer bisa akses ke internet silahkan isi IP address dan gatewaynya mengarah ke mikrotik secara manual di komputer local area network.
+Atau…
+Bisa mengaktifkan dhcp server di mikrotik sehingga semua perangkat otomatis mendapatkan IP dari mikrotik.
