@@ -25,15 +25,11 @@ Buatlah desain topologi jaringan sesuai dengan kondisi dan rencana yang sudah di
 <img src="https://drive.google.com/uc?export=view&id=1TYn4m0n87Z6_qcmrOjTRUctwLiONay-C"/>
 
 
-<img src="https://drive.google.com/uc?export=view&id="/>
+<img src="https://drive.google.com/uc?export=view&id=1bGCgtkmb6GA1nJpjVHbQ795VX-dx_iY8"/>
 
 
-<img src="https://drive.google.com/uc?export=view&id="/>
+<img src="https://drive.google.com/uc?export=view&id=1jh6yJDYRqEn2S4aAPEf7UFt6t4pE8swa"/>
 
 
-<img src="https://drive.google.com/uc?export=view&id="/>
-
-
-
-<img src="https://drive.google.com/uc?export=view&id="/>
+<img src="https://drive.google.com/uc?export=view&id=1zvjp_1WVebVrUSeDuZFA46AUB1m_WZIF"/>
 
