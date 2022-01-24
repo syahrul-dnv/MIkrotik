@@ -84,7 +84,7 @@ IP address anggaplah sebagai berikut, silahkan sesuaikan dengan IP yang sudah di
 <li>ether1 – seting IP otomatis ( dhcp client ) dari modem indihome atau IP manual 192.168.100.2/24</li>
 <li>ether2 – IP manual 192.168.2.1/24</li>
 <li>>ether3 – IP manual 192.168.3.1/24</li>
-<center><img src="https://drive.google.com/uc?export=view&id=1bGCgtkmb6GA1nJpjVHbQ795VX-dx_iY8"/></center>
+<center><img src="https://drive.google.com/uc?export=view&id=1bGCgtkmb6GA1nJpjVHbQ795VX-dx_iY8"></center>
 Setting IP address di mikrotik
 Berikan IP address ke ether2 dan ether3 sama seperti gambar di atas, dan sesuaikan IP address nya.
 Jika IP address sudah di setting ke semua ether dan sudah sesuai dengan topologi, maka ke langkah seting mikrotik dasar selanjutnya.
@@ -100,6 +100,7 @@ Copy script dibawah ini kemudian paste ke new terminal winbox untuk menambahkan 
 
 Atau bisa menambahkan default gateway secara manual seperti ini:
 <center><img src="https://drive.google.com/uc?export=view&id=1jh6yJDYRqEn2S4aAPEf7UFt6t4pE8swa"></center>
+
 Default gateway MikroTIk
 Sampai disini seharusnya mikrotik sudah bisa Ping ke IP public seperti : 8.8.8.8.
 
