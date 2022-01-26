@@ -51,6 +51,41 @@ Sampai langkah ini, router dan pc client sudah dapat melakukan koneksi internet.
 
 Pada routerboard tertentu, seperti RB450G, RB433AH, RB433UAH, RB800 dan RB1100 mempunyai expansion slot (USB, MicroSD, CompactFlash) untuk storage tambahan. Pada contoh berikut, kita akan menggunakan usb flashdisk yang dipasangkan pada slot USB. Untuk pertama kali pemasangan, storage tambahan ini akan terbaca statusnya invalid di /system store. Agar dapat digunakan sebagai media penyimpan cache, maka storage harus diformat dahulu dan diaktifkan Nantinya kita tinggal mengaktifkan webproxy dan set cache-on-disk=yes untuk menggunakan media storage kita. Jangan lupa untuk membelokkan trafik HTTP (tcp port 80) kedalam webproxy kita.
 
+<pre>/store disk format-drive usb1
+/store
+add disk=usb1 name=cache-usb type=web-proxy
+activate cache-usb
+
+/ip proxy
+set cache-on-disk=yes enabled=yes max-cache-size=200000KiB port=8080
+
+/ip firewall nat
+add chain=dstnat protocol=tcp dst-port=80 in-interface=wlan2 action=redirect to-ports=8080</pre>
+
+## Pengaturan Mangle
+Pada loadbalancing kali ini kita akan menggunakan fitur yang disebut PCC (Per Connection Classifier). Dengan PCC kita bisa mengelompokan trafik koneksi yang melalui atau keluar masuk router menjadi beberapa kelompok. Pengelompokan ini bisa dibedakan berdasarkan src-address, dst-address, src-port dan atau dst-port. Router akan mengingat-ingat jalur gateway yang dilewati diawal trafik koneksi, sehingga pada paket-paket selanjutnya yang masih berkaitan dengan koneksi awalnya akan dilewatkan  pada jalur gateway yang sama juga. Kelebihan dari PCC ini yang menjawab banyaknya keluhan sering putusnya koneksi pada teknik loadbalancing lainnya sebelum adanya PCC karena perpindahan gateway..
+Sebelum membuat mangle loadbalance, untuk mencegah terjadinya loop routing pada trafik, maka semua trafik client yang menuju network yang terhubung langsung dengan router, harus kita bypass dari loadbalancing. Kita bisa membuat daftar IP yang masih dalam satu network router dan  memasang mangle pertama kali sebagai berikut
+
+<pre>/ip firewall address-list
+add address=192.168.101.0/30 list=lokal
+add address=192.168.102.0/30 list=lokal
+add address=10.10.10.0/24 list=lokal
+
+/ip firewall mangle
+add action=accept chain=prerouting dst-address-list=lokal in-interface=wlan2 comment=�trafik lokal�
+add action=accept chain=output dst-address-list=lokal</pre>
 
 
+Pada kasus tertentu, trafik pertama bisa berasal dari Internet, seperti penggunaan remote winbox atau telnet dari internet dan sebagainya, oleh karena itu kita juga memerlukan mark-connection untuk menandai trafik tersebut agar trafik baliknya juga bisa melewati interface dimana trafik itu masuk
+
+<pre>/ip firewall mangle
+add action=mark-connection chain=prerouting connection-mark=no-mark in-interface=ether1 new-connection-mark=con-from-isp1 passthrough=yes comment=�trafik dari isp1�
+add action=mark-connection chain=prerouting connection-mark=no-mark in-interface=ether2 new-connection-mark=con-from-isp2 passthrough=yes comment=�trafik dari isp2�</pre>
+
+Umumnya, sebuah ISP akan membatasi akses DNS servernya dari IP yang hanya dikenalnya, jadi jika anda menggunakan DNS dari salah satu ISP anda, anda harus menambahkan mangle agar trafik DNS tersebut melalui gateway ISP yang bersangkutan bukan melalui gateway ISP lainnya. Disini kami berikan mangle DNS ISP1 yang melalui gateway ISP1. Jika anda menggunakan publik DNS independent, seperti opendns, anda tidak memerlukan mangle dibawah ini.
+
+<Pre>/ip firewall mangle
+add action=mark-connection chain=output comment=dns dst-address=202.65.112.21 dst-port=53 new-connection-mark=dns passthrough=yes protocol=tcp comment=�trafik DNS citra.net.id�
+add action=mark-connection chain=output dst-address=202.65.112.21 dst-port=53 new-connection-mark=dns passthrough=yes protocol=udp
+add action=mark-routing chain=output connection-mark=dns new-routing-mark=route-to-isp1 passthrough=no</pre>
 
