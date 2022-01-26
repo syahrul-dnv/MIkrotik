@@ -138,3 +138,11 @@ add check-gateway=ping dst-address=0.0.0.0/0 gateway=192.168.101.1 routing-mark=
 Dari hasil pengujian kami, didapatkan sebagai berikut.
 <center><img src="https://drive.google.com/uc?export=view&id=1rxqkfi6g7RubQHsBVpM699EoMqLfP1BT"></center>
 
+Dari gambar terlihat, bahwa hanya dengan melakukan 1 file download (1 koneksi), kita hanya mendapatkan speed 56kBps (448kbps) karena pada saat itu melewati gateway ISP1, sedangkan jika kita mendownload file (membuka koneksi baru) lagi pada web lain, akan mendapatkan 30kBps (240kbps). Dari pengujian ini terlihat dapat disimpulkan bahwa
+512kbps + 256kbps ≠ 768kbps
+
+### Catatan :
+
+* Loadbalancing menggunakan teknik pcc ini akan berjalan efektif dan mendekati seimbang jika semakin banyak koneksi (dari client) yang terjadi.
+* Gunakan ISP yang memiliki bandwith FIX bukan Share untuk mendapatkan hasil yang lebih optimal.
+* Load Balance menggunakan PCC ini bukan selamanya dan sepenuhnya sebuah solusi yang pasti berhasil baik di semua jenis network, karena proses penyeimbangan dari traffic adalah berdasarkan logika probabilitas.  
