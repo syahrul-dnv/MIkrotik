@@ -15,3 +15,9 @@ Jika pada kondisi diatas berbeda dengan kondisi jaringan ditempat anda, maka kon
 
 Berikut ini adalah Topologi Jaringan dan IP address yang akan kita gunakan
 <center><img src="https://drive.google.com/uc?export=view&id=12sHP2wx86wHIKdJ_IGszkgvZ0bu3oRds"></center>
+<pre>/ip address
+add address=192.168.101.2/30 interface=ether1
+add address=192.168.102.2/30 interface=ether2
+add address=10.10.10.1/24 interface=wlan2
+/ip dns
+set allow-remote-requests=yes primary-dns=208.67.222.222 secondary-dns=208.67.220.220</pre>
