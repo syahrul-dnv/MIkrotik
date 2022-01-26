@@ -21,3 +21,9 @@ add address=192.168.102.2/30 interface=ether2
 add address=10.10.10.1/24 interface=wlan2
 /ip dns
 set allow-remote-requests=yes primary-dns=208.67.222.222 secondary-dns=208.67.220.220</pre>
+
+Untuk koneksi client, kita menggunakan koneksi wireless pada wlan2 dengan range IP client 10.10.10.2 s/d 10.10.10.254 netmask 255.255.255.0, dimana IP 10.10.10.1 yang dipasangkan pada wlan2 berfungsi sebagai gateway dan dns server dari client. Jika anda menggunakan DNS dari salah satu isp anda, maka akan ada tambahan mangle yang akan kami berikan tanda tebal
+
+Setelah pengkonfigurasian IP dan DNS sudah benar, kita harus memasangkan default route ke masing-masing IP gateway ISP kita agar router meneruskan semua trafik yang tidak terhubung padanya ke gateway tersebut. Disini kita menggunakan fitur check-gateway berguna jika salah satu gateway kita putus, maka koneksi akan dibelokkan ke gateway lainnya.
+
+
