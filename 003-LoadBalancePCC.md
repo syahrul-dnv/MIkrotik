@@ -89,3 +89,40 @@ add action=mark-connection chain=output comment=dns dst-address=202.65.112.21 ds
 add action=mark-connection chain=output dst-address=202.65.112.21 dst-port=53 new-connection-mark=dns passthrough=yes protocol=udp
 add action=mark-routing chain=output connection-mark=dns new-routing-mark=route-to-isp1 passthrough=no</pre>
 
+Karena kita menggunakan webproxy pada router, maka trafik yang perlu kita loadbalance ada 2 jenis. Yang pertama adalah trafik dari client menuju internet (non HTTP), dan trafik dari webproxy menuju internet. Agar lebih terstruktur dan mudah dalam pembacaannya, kita akan menggunakan custom-chain sebagai berikut :
+
+<pre>/ip firewall mangle
+add action=jump chain=prerouting comment=�lompat ke client-lb� connection-mark=no-mark in-interface=wlan2 jump-target=client-lb
+add action=jump chain=output comment=�lompat ke lb-proxy� connection-mark=no-mark out-interface=!wlan2 jump-target=lb-proxy</pre>
+
+
+Pada mangle diatas, untuk trafik loadbalance client pastikan parameter in-interface adalah interface yang terhubung dengan client, dan untuk trafik loadbalance webproxy, kita menggunakan chain output dengan parameter out-interface yang bukan terhubung ke interface client. Setelah custom chain untuk loadbalancing dibuat, kita bisa membuat mangle di custom chain tersebut sebagai berikut
+
+<pre>/ip firewall mangle
+add action=mark-connection chain=client-lb dst-address-type=!local new-connection-mark=to-isp1 passthrough=yes per-connection-classifier=both-addresses:3/0 comment=�awal loadbalancing klien�
+add action=mark-connection chain=client-lb dst-address-type=!local new-connection-mark=to-isp1 passthrough=yes per-connection-classifier=both-addresses:3/1
+add action=mark-connection chain=client-lb dst-address-type=!local new-connection-mark=to-isp2 passthrough=yes per-connection-classifier=both-addresses:3/2
+add action=return chain=client-lb comment=�akhir dari loadbalancing�</pre>
+
+<pre>/ip firewall mangle
+add action=mark-connection chain=lb-proxy dst-address-type=!local new-connection-mark=con-from-isp1 passthrough=yes per-connection-classifier=both-addresses:3/0 comment=�awal load balancing proxy�
+add action=mark-connection chain=lb-proxy dst-address-type=!local new-connection-mark=con-from-isp1 passthrough=yes per-connection-classifier=both-addresses:3/1
+add action=mark-connection chain=lb-proxy dst-address-type=!local new-connection-mark=con-from-isp2 passthrough=yes per-connection-classifier=both-addresses:3/2
+add action=return chain=lb-proxy comment=�akhir dari loadbalancing�</pre>
+
+
+Untuk contoh diatas, pada loadbalancing client dan webproxy menggunakan parameter pemisahan trafik pcc yang sama, yaitu both-address, sehingga router akan mengingat-ingat berdasarkan src-address dan dst-address dari sebuah koneksi. Karena trafik ISP kita yang berbeda (512kbps dan 256kbps), kita membagi beban trafiknya menjadi 3 bagian. 2 bagian pertama akan melewati gateway ISP1, dan 1 bagian terakhir akan melewati gateway ISP2. Jika masing-masing trafik dari client dan proxy sudah ditandai, langkah berikutnya kita tinggal membuat mangle mark-route yang akan digunakan dalam proses routing nantinya
+
+<pre>/ip firewall mangle
+add action=jump chain=prerouting comment=�marking route client� connection-mark=!no-mark in-interface=wlan2 jump-target=route-client
+add action=mark-routing chain=route-client connection-mark=to-isp1 new-routing-mark=route-to-isp1 passthrough=no
+add action=mark-routing chain=route-client connection-mark=to-isp2 new-routing-mark=route-to-isp2 passthrough=no
+add action=mark-routing chain=route-client connection-mark=con-from-isp1 new-routing-mark=route-to-isp1 passthrough=no
+add action=mark-routing chain=route-client connection-mark=con-from-isp2 new-routing-mark=route-to-isp2 passthrough=no
+add action=return chain=route-client disabled=no</pre>
+
+<pre>/ip firewall mangle
+add action=mark-routing chain=output comment=�marking route proxy� connection-mark=con-from-isp1 new-routing-mark=route-to-isp1 out-interface=!wlan2 passthrough=no
+add action=mark-routing chain=output connection-mark=con-from-isp2 new-routing-mark=route-to-isp2 out-interface=!wlan2 passthrough=no</pre>
+
+
