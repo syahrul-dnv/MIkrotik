@@ -27,3 +27,18 @@ Untuk koneksi client, kita menggunakan koneksi wireless pada wlan2 dengan range 
 Setelah pengkonfigurasian IP dan DNS sudah benar, kita harus memasangkan default route ke masing-masing IP gateway ISP kita agar router meneruskan semua trafik yang tidak terhubung padanya ke gateway tersebut. Disini kita menggunakan fitur check-gateway berguna jika salah satu gateway kita putus, maka koneksi akan dibelokkan ke gateway lainnya.
 
 
+<pre>/ip route
+add dst-address=0.0.0.0/0 gateway=192.168.101.1 distance=1 check-gateway=ping
+add dst-address=0.0.0.0/0 gateway=192.168.102.1 distance=2 check-gateway=ping</pre>
+
+
+Untuk pengaturan Access Point sehingga PC client dapat terhubung dengan wireless kita, kita menggunakan perintah
+
+<pre>/interface wireless
+set wlan2 mode=ap-bridge band=2.4ghz-b/g ssid=Mikrotik disabled=no</pre>
+
+
+Agar pc client dapat melakukan koneksi ke internet, kita juga harus merubah IP privat client ke IP publik yang ada di interface publik kita yaitu ether1 dan ether2.
+
+
+
