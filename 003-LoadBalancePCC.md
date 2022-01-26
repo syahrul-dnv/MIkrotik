@@ -11,4 +11,6 @@ Pada artikel ini kami menggunakan RB433UAH dengan kondisi sebagai berikut :
 
 Jika pada kondisi diatas berbeda dengan kondisi jaringan ditempat anda, maka konfigurasi yang akan kita jabarkan disini harus anda sesuaikan dengan konfigurasi untuk jaringan ditempat anda.
 
+## Konfigurasi Dasar
 
+Berikut ini adalah Topologi Jaringan dan IP address yang akan kita gunakan
