@@ -14,3 +14,4 @@ Jika pada kondisi diatas berbeda dengan kondisi jaringan ditempat anda, maka kon
 ## Konfigurasi Dasar
 
 Berikut ini adalah Topologi Jaringan dan IP address yang akan kita gunakan
+<center>img src="https://drive.google.com/uc?export=view&id=12sHP2wx86wHIKdJ_IGszkgvZ0bu3oRds"></center>
