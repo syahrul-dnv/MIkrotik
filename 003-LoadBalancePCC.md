@@ -119,10 +119,22 @@ add action=mark-routing chain=route-client connection-mark=to-isp1 new-routing-m
 add action=mark-routing chain=route-client connection-mark=to-isp2 new-routing-mark=route-to-isp2 passthrough=no
 add action=mark-routing chain=route-client connection-mark=con-from-isp1 new-routing-mark=route-to-isp1 passthrough=no
 add action=mark-routing chain=route-client connection-mark=con-from-isp2 new-routing-mark=route-to-isp2 passthrough=no
-add action=return chain=route-client disabled=no</pre>
+add action=return chain=route-client disabled=no
 
-<pre>/ip firewall mangle
+/ip firewall mangle
 add action=mark-routing chain=output comment=�marking route proxy� connection-mark=con-from-isp1 new-routing-mark=route-to-isp1 out-interface=!wlan2 passthrough=no
 add action=mark-routing chain=output connection-mark=con-from-isp2 new-routing-mark=route-to-isp2 out-interface=!wlan2 passthrough=no</pre>
 
+## Pengaturan Routing
+Pengaturan mangle diatas tidak akan berguna jika anda belum membuat routing berdasar mark-route yang sudah kita buat. Disini kita juga akan membuat routing backup, sehingga apabila sebuah gateway terputus, maka semua koneksi akan melewati gateway yang masing terhubung
+
+<pre>/ip route
+add check-gateway=ping dst-address=0.0.0.0/0 gateway=192.168.101.1 routing-mark=route-to-isp1 distance=1
+add check-gateway=ping dst-address=0.0.0.0/0 gateway=192.168.102.1 routing-mark=route-to-isp1 distance=2
+add check-gateway=ping dst-address=0.0.0.0/0 gateway=192.168.102.1 routing-mark=route-to-isp2 distance=1
+add check-gateway=ping dst-address=0.0.0.0/0 gateway=192.168.101.1 routing-mark=route-to-isp2 distance=2</pre>
+
+## Pengujian
+Dari hasil pengujian kami, didapatkan sebagai berikut.
+<center><img src="https://drive.google.com/uc?export=view&id=1rxqkfi6g7RubQHsBVpM699EoMqLfP1BT"></center>
 
