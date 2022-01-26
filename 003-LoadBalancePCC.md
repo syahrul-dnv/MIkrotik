@@ -40,5 +40,17 @@ set wlan2 mode=ap-bridge band=2.4ghz-b/g ssid=Mikrotik disabled=no</pre>
 
 Agar pc client dapat melakukan koneksi ke internet, kita juga harus merubah IP privat client ke IP publik yang ada di interface publik kita yaitu ether1 dan ether2.
 
+<pre>/ip firewall nat
+add action=masquerade chain=srcnat out-interface=ether1
+add action=masquerade chain=srcnat out-interface=ether2</pre>
+
+
+Sampai langkah ini, router dan pc client sudah dapat melakukan koneksi internet. Lakukan ping baik dari router ataupun pc client ke internet. Jika belum berhasil, cek sekali lagi konfigurasi anda.
+
+## Webproxy Internal
+
+Pada routerboard tertentu, seperti RB450G, RB433AH, RB433UAH, RB800 dan RB1100 mempunyai expansion slot (USB, MicroSD, CompactFlash) untuk storage tambahan. Pada contoh berikut, kita akan menggunakan usb flashdisk yang dipasangkan pada slot USB. Untuk pertama kali pemasangan, storage tambahan ini akan terbaca statusnya invalid di /system store. Agar dapat digunakan sebagai media penyimpan cache, maka storage harus diformat dahulu dan diaktifkan Nantinya kita tinggal mengaktifkan webproxy dan set cache-on-disk=yes untuk menggunakan media storage kita. Jangan lupa untuk membelokkan trafik HTTP (tcp port 80) kedalam webproxy kita.
+
+
 
 
