@@ -39,9 +39,12 @@ Selanjutnya konfigurasikan IP address untuk vlan management pada interface bridg
 <img src="https://drive.google.com/uc?export=view&id=1mDhewmHHJeJhqhirorvEtDp-pFn-1Rb6"><br>
 
 <br>
-<img src="https://drive.google.com/uc?export=view&id=">
+## Mode Tagged
+<img src="https://drive.google.com/uc?export=view&id=1kHCf0KiKdvNxu9gGfQEjIPR7o-WGYxvT">
+Dengan menggunakan mode tagged ini kita akan membuat interface vlan untuk vlan management. Sebagai contoh disini akan menggunakan vlan 99 untuk vlan management nya.
 
-<img src="https://drive.google.com/uc?export=view&id=">
+Konfigurasi pada router
+<img src="https://drive.google.com/uc?export=view&id=1LaMMhmWK8KJEoObWpOg_P1mTthZc_Hbg">
 
 <img src="https://drive.google.com/uc?export=view&id=">
 
