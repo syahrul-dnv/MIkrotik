@@ -55,12 +55,10 @@ Untuk topologi nya masih sama, di ether1 sebagai trunk, ether2 dan ether3 sebaga
 <img src="https://drive.google.com/uc?export=view&id=1sBlMWcZAnLs6SB63wtmmkHnWkxY87vsP">
 
 
-
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
+Buat bridge untuk ether1 (trunk), ether2 (access), dan ether3 (access). Jangan lupa tentukan pvid untuk port access, detail cek pada gambar berikut:<br>
+<img src="https://drive.google.com/uc?export=view&id=123GoVsQgPfR9DlXiDSWZ3rVFIHl9MarI"><br>
+<img src="https://drive.google.com/uc?export=view&id=1SVzM4ywLlOe2bWa3jBNVgylAFjUvKQYb"><br>
+<img src="https://drive.google.com/uc?export=view&id=1Bf-C7p-8EDibCeJd7xS6ZGVE8sptJ3bq"><br>
 <img src="https://drive.google.com/uc?export=view&id=">
 
 <img src="https://drive.google.com/uc?export=view&id=">
