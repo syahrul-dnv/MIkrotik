@@ -16,8 +16,10 @@ Contoh topologi yang kita gunakan adalah seperti gambar berikut:
 Konfigurasi pada router, IP Address untuk management terpasang pada interface yang mengarah ke switch.
 
 <img src="https://drive.google.com/uc?export=view&id=1inSLG8n_FubP1YW6B1-M_Pkhi4ABy-aM">
+Dan konfigurasi pada switch adalah sebagai berikut:
 
-<img src="https://drive.google.com/uc?export=view&id=">
+Pada kasus ini ether1 adalah trunk, ether2, dan ether3 adalah port access yang akan digunakan untuk client.
+<img src="https://drive.google.com/uc?export=view&id=1NmZojGhlbZOKJmZV8FgOQmO15OAjrsLv">
 
 <img src="https://drive.google.com/uc?export=view&id=">
 <img src="https://drive.google.com/uc?export=view&id=">
