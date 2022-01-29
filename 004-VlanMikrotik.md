@@ -46,9 +46,15 @@ Dengan menggunakan mode tagged ini kita akan membuat interface vlan untuk vlan m
 Konfigurasi pada router<br>
 <img src="https://drive.google.com/uc?export=view&id=1LaMMhmWK8KJEoObWpOg_P1mTthZc_Hbg"><br>
 
-<img src="https://drive.google.com/uc?export=view&id=">
+Pada router terdapat interface vlan management yaitu vlan 99 dan IP address terpasang pada interface vlan tersebut.
 
-<img src="https://drive.google.com/uc?export=view&id=">
+Konfigurasi pada switch
+Untuk topologi nya masih sama, di ether1 sebagai trunk, ether2 dan ether3 sebagai port access.<br>
+<img src="https://drive.google.com/uc?export=view&id=1sBlMWcZAnLs6SB63wtmmkHnWkxY87vsP"><br>
+
+<img src="https://drive.google.com/uc?export=view&id=1sBlMWcZAnLs6SB63wtmmkHnWkxY87vsP">
+
+
 
 <img src="https://drive.google.com/uc?export=view&id=">
 
