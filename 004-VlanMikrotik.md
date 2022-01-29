@@ -66,23 +66,59 @@ Selanjutnya buat pada tab VLANs untuk vlan 11, vlan 12, dan vlan 99. Untuk VLAN 
 <img src="https://drive.google.com/uc?export=view&id=1H8F3ZFgiG7iRGy8O2Nf-J-JH8SVVTEu0"><br>
 
 Setelah itu bisa kita aktifkan untuk vlan filtering nya.<br>
+<img src="https://drive.google.com/uc?export=view&id=15bQ1A3n8FWRMVtBD7-Diozao5NPlFcQb"><br>
+
+Kemudian kita bisa membuat interface vlan dengan vlan id 99. Setelah itu bisa diberi IP pada interface vlan99 tersebut sesuai dengan alokasi untuk IP vlan management yang sudah temen temen tentukan sebelumnya. Sampai disini vlan management untuk CRS 3XX Series sudah bisa digunakan.<br>
+<img src="https://drive.google.com/uc?export=view&id=10djiK8Tjd4dQQkRb7lLGxqK5VvPiTaTz"><br>
+
+## Konfigurasi VLAN Management pada CRS 1XX / 2XX Series
+
+Untuk konfigurasi VLAN pada CRS 1XX / 2XX Series ini sedikit berbeda. Kita tidak menggunakan menu bridge, namun menggunakan menu switch.
+Mode Untagged
+
+Konfigurasi pada router, IP Address untuk management terpasang pada interface yang mengarah ke switch.<br>
+<img src="https://drive.google.com/uc?export=view&id=177g5oKT6DBSR2z25_Mt3ksMnnQ04Q4u9"><br>
+
+Untuk konfigurasi pada switch bisa dilihat pada gambar berikut:<br>
+<img src="https://drive.google.com/uc?export=view&id=1xv_hEtFtUDPAmIL3mFu-1A2dMoyNw7wg"><br>
+<img src="https://drive.google.com/uc?export=view&id=1Hv3qqaZ0O08n8iMC0pYoXJuqa9k8hwCJ"><br>
+
+Kita buat terlebih dahulu untuk bridge nya, masukkan port ethernet yang menjadi trunk dan access di satu bridge yang sama. Pada contoh ini ether24 adalah trunk, sedangkan ether1 dan ether2 adalah access.
+Selanjutnya kita masuk ke menu Switch → VLAN
+Tambahkan konfigurasi Ingress VLAN<br>
+<img src="https://drive.google.com/uc?export=view&id=1j1xcMfd2uK1hKG8qoXM3d9HqYAKOMgfc"><br>
+
+Tambahkan konfigurasi Egress VLAN<br>
+<img src="https://drive.google.com/uc?export=view&id=1VljhT9iez0q0nTpEyfYrm5nsKhG-v2y9"><br>
+<img src="https://drive.google.com/uc?export=view&id=1iGGtZNcsEKt_q9o0wXb-38VhIM5Y3vQC"><br>
+
+Konfigurasikan Switch VLAN<br>
+<img src="https://drive.google.com/uc?export=view&id=1ZMI-rArdxJTxoXX255A-3QDuixsRc_CI"><br>
+<img src="https://drive.google.com/uc?export=view&id=1FcA8laE1qvtnG_XVgPceCiXWgoK6chsC"><br>
+
+
+Kita tambahkan juga vlan id 0 untuk port ether24 (trunk) dan switch1-cpu.<br>
+<img src="https://drive.google.com/uc?export=view&id=1N0-sPQwk-Nbapc3G-GUeAxkjh6KSXhDg"><br>
+
+Konfigurasi pada menu switch → settings dan set untuk Drop If Invalid VLAN On Ports ether24 (trunk), ether1 (access), dan ether2 (access).<br>
+<img src="https://drive.google.com/uc?export=view&id=1u0IuVdy8ikGzCi2Je2FJ9xERWoz2rZqy"><br>
+
+Kemudian sudah bisa kita tambahkan IP address untuk interface bridge1 nya.<br>
+<img src="https://drive.google.com/uc?export=view&id=1mwE6FGFdMnh4giGGCj-nFdLx9vGCarvO"><br>
+
+<!-- 
 <img src="https://drive.google.com/uc?export=view&id="><br>
 
-<img src="https://drive.google.com/uc?export=view&id=">
 
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id="><br>
 
 
-<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id="><br>
 
-<img src="https://drive.google.com/uc?export=view&id=">
 
-<img src="https://drive.google.com/uc?export=view&id=">
 
-<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id="><br>
 
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br> -->
