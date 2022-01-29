@@ -21,13 +21,11 @@ Dan konfigurasi pada switch adalah sebagai berikut:
 Pada kasus ini ether1 adalah trunk, ether2, dan ether3 adalah port access yang akan digunakan untuk client.
 <img src="https://drive.google.com/uc?export=view&id=1NmZojGhlbZOKJmZV8FgOQmO15OAjrsLv">
 
-<img src="https://drive.google.com/uc?export=view&id=">
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
+Pertama, buat bridge untuk ether1 (trunk), ether2 (access), dan ether3 (access). Jangan lupa tentukan pvid untuk port access, detail cek pada gambar berikut:
+<img src="https://drive.google.com/uc?export=view&id=1QWQmI-7FjYC1GUUe5mAu_QZ2yUhohQz7"><br>
+<img src="https://drive.google.com/uc?export=view&id=163SwclYa6CWF9MoBgq-s0EMMdnl5QXXZ"><br>
+<img src="https://drive.google.com/uc?export=view&id=1HqlbXZBmErJYgNAgzUc6zb5ZmmKnN5An"><br>
+<img src="https://drive.google.com/uc?export=view&id=1y1-qKUylP6JIM078-ZWWLTVUHJf3uvBj"><br>
 
 <img src="https://drive.google.com/uc?export=view&id=">
 
