@@ -13,4 +13,65 @@ Untuk mode untagged akan sederhana karena kita akan memberikan IP pada interface
 Contoh topologi yang kita gunakan adalah seperti gambar berikut:
 <img src="https://drive.google.com/uc?export=view&id=1acxAFDTQAdNDYQ188GTXDxPfdx4HZ_KO">
 
+Konfigurasi pada router, IP Address untuk management terpasang pada interface yang mengarah ke switch.
 
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
+
+<img src="https://drive.google.com/uc?export=view&id=">
