@@ -11,7 +11,7 @@ Contoh yang pertama kita akan mencoba untuk menggunakan perangkat CRS 3XX Series
 Untuk mode untagged akan sederhana karena kita akan memberikan IP pada interface bridge nya langsung. Kita tidak akan membuat interface vlan management pada router maupun switch.
 
 Contoh topologi yang kita gunakan adalah seperti gambar berikut:
-<img src="https://drive.google.com/uc?export=view&id=1acxAFDTQAdNDYQ188GTXDxPfdx4HZ_KO">
+<img src="https://drive.google.com/uc?export=view&id=1pTIPLUBPkTcjwSdxy1lu7m9dxG_xfHgg">
 
 Konfigurasi pada router, IP Address untuk management terpasang pada interface yang mengarah ke switch.
 
