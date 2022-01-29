@@ -27,9 +27,10 @@ Pertama, buat bridge untuk ether1 (trunk), ether2 (access), dan ether3 (access).
 <img src="https://drive.google.com/uc?export=view&id=1HqlbXZBmErJYgNAgzUc6zb5ZmmKnN5An"><br>
 <img src="https://drive.google.com/uc?export=view&id=1y1-qKUylP6JIM078-ZWWLTVUHJf3uvBj"><br>
 
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
+Kemudian konfigurasikan pada tab VLANs
+<img src="https://drive.google.com/uc?export=view&id=14kHQ6k6kBXKD90La4iYrP9A8q_N5wwMG">
+<br>
+<img src="https://drive.google.com/uc?export=view&id=1hHGepMbjDthk5pXkHqrGV82ML19EICi6">
 
 <img src="https://drive.google.com/uc?export=view&id=">
 
