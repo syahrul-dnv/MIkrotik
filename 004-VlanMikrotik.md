@@ -59,14 +59,14 @@ Buat bridge untuk ether1 (trunk), ether2 (access), dan ether3 (access). Jangan l
 <img src="https://drive.google.com/uc?export=view&id=123GoVsQgPfR9DlXiDSWZ3rVFIHl9MarI"><br>
 <img src="https://drive.google.com/uc?export=view&id=1SVzM4ywLlOe2bWa3jBNVgylAFjUvKQYb"><br>
 <img src="https://drive.google.com/uc?export=view&id=1Bf-C7p-8EDibCeJd7xS6ZGVE8sptJ3bq"><br>
-<img src="https://drive.google.com/uc?export=view&id=">
 
-<img src="https://drive.google.com/uc?export=view&id=">
+Selanjutnya buat pada tab VLANs untuk vlan 11, vlan 12, dan vlan 99. Untuk VLAN management yaitu vlan 99, tambahkan juga port bridge sebagai tagged.<br>
+<img src="https://drive.google.com/uc?export=view&id=1vIDfScQjNvIbiCth4dbFx4j0FagAGLNZ"><br>
+<img src="https://drive.google.com/uc?export=view&id=1TfUZHWrNDeoWC6yDAFWmczuO4gDija7P"><br>
+<img src="https://drive.google.com/uc?export=view&id=1H8F3ZFgiG7iRGy8O2Nf-J-JH8SVVTEu0"><br>
 
-
-<img src="https://drive.google.com/uc?export=view&id=">
-
-<img src="https://drive.google.com/uc?export=view&id=">
+Setelah itu bisa kita aktifkan untuk vlan filtering nya.<br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
 
 <img src="https://drive.google.com/uc?export=view&id=">
 
