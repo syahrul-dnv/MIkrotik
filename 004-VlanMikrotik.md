@@ -74,7 +74,8 @@ Kemudian kita bisa membuat interface vlan dengan vlan id 99. Setelah itu bisa di
 ## Konfigurasi VLAN Management pada CRS 1XX / 2XX Series
 
 Untuk konfigurasi VLAN pada CRS 1XX / 2XX Series ini sedikit berbeda. Kita tidak menggunakan menu bridge, namun menggunakan menu switch.
-Mode Untagged
+
+## Mode Untagged
 
 Konfigurasi pada router, IP Address untuk management terpasang pada interface yang mengarah ke switch.<br>
 <img src="https://drive.google.com/uc?export=view&id=177g5oKT6DBSR2z25_Mt3ksMnnQ04Q4u9"><br>
@@ -106,13 +107,14 @@ Konfigurasi pada menu switch → settings dan set untuk Drop If Invalid VLAN On 
 Kemudian sudah bisa kita tambahkan IP address untuk interface bridge1 nya.<br>
 <img src="https://drive.google.com/uc?export=view&id=1mwE6FGFdMnh4giGGCj-nFdLx9vGCarvO"><br>
 
-<!-- 
-<img src="https://drive.google.com/uc?export=view&id="><br>
+## Mode Tagged
 
+<img src="https://drive.google.com/uc?export=view&id=113jN2HwTqo9fcLEjE89TsiCTPBiRrgXC"><br>
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
+Konfigurasi pada router
+<img src="https://drive.google.com/uc?export=view&id=105L0mmZYPOc8oM5Qxz1t09lVjklRcL7w"><br>
 
-
+<!--
 <img src="https://drive.google.com/uc?export=view&id="><br>
 
 
