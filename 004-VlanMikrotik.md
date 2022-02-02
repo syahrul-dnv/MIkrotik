@@ -140,12 +140,19 @@ Terakhir, kita konfigurasi pada menu switch → settings dan set untuk Drop If I
 Kita sudah bisa menambahkan IP address pada interface vlan99 yang kita buat tadi dan vlan management sudah bisa digunakan.<br>
 <img src="https://drive.google.com/uc?export=view&id=17K8MYU5rrS72FG_2l4X83Vp3vMARC_fj"><br>
 
+## Konfigurasi VLAN Management pada CSS (Switch OS)
+
+Karena seri CSS menggunakan Switch OS, maka bisa kita konfigurasi melalui web browser. Memang untuk tampilan nya lebih simpel dari pada CRS yang menggunakan Router OS.
+
+Untuk topologi yang kita gunakan masih sama.<br>
+<img src="https://drive.google.com/uc?export=view&id=1vAAuPWm72c2MxTBZAfFc3SL0cnMPCbsB"><br>
+
+
 <!--
 
 
 
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
 
