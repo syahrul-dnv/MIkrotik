@@ -119,13 +119,13 @@ Konfigurasi pada switch<br>
 <img src="https://drive.google.com/uc?export=view&id=1rs7iCW4O12H16kWj-hgHBm1nmEDxOHS"><br>
 
 
+<img src="https://drive.google.com/uc?export=view&id=1h_TdBAPUd0DdGHWK-D-MSLBlHiU1_6vn"><br>
 
 <!--
 
 
 
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
 
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
