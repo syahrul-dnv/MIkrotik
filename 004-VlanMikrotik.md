@@ -134,11 +134,17 @@ Selanjutnya tambahkan konfigurasi Switch VLAN, pada vlan management yaitu vlan 9
 
 Setelah itu kita bisa buat interface vlan baru dengan vlan id 99 dan interface bridge yang kita buat di awal tadi.<br>
 <img src="https://drive.google.com/uc?export=view&id=1EkC0yE3yo9LmyfOWcYzlXzz7fkLESpv1"><br>
+
+Terakhir, kita konfigurasi pada menu switch → settings dan set untuk Drop If Invalid VLAN On Ports ether24 (trunk), ether1 (access), dan ether2 (access).
+
+Kita sudah bisa menambahkan IP address pada interface vlan99 yang kita buat tadi dan vlan management sudah bisa digunakan.<br>
+<img src="https://drive.google.com/uc?export=view&id=17K8MYU5rrS72FG_2l4X83Vp3vMARC_fj"><br>
+
 <!--
 
 
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
+
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
