@@ -111,7 +111,7 @@ Kemudian sudah bisa kita tambahkan IP address untuk interface bridge1 nya.<br>
 
 <img src="https://drive.google.com/uc?export=view&id=113jN2HwTqo9fcLEjE89TsiCTPBiRrgXC"><br>
 
-Konfigurasi pada router
+Konfigurasi pada router<br>
 <img src="https://drive.google.com/uc?export=view&id=105L0mmZYPOc8oM5Qxz1t09lVjklRcL7w"><br>
 
 <!--
