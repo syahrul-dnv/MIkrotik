@@ -131,10 +131,13 @@ Selanjutnya tambahkan konfigurasi Switch VLAN, pada vlan management yaitu vlan 9
 <img src="https://drive.google.com/uc?export=view&id=1DGbW8QbEYjXyK1cG3ETa7tGIYPkuU95g"><br>
 <img src="https://drive.google.com/uc?export=view&id=1FA5inOIEjsiu5pEsKXbFuddbyYqknTHf"><br>
 <img src="https://drive.google.com/uc?export=view&id=1bJOeWdmGkYCE1AI6uTvYp6Ovy6aguDXC"><br>
+
+Setelah itu kita bisa buat interface vlan baru dengan vlan id 99 dan interface bridge yang kita buat di awal tadi.<br>
+<img src="https://drive.google.com/uc?export=view&id=1EkC0yE3yo9LmyfOWcYzlXzz7fkLESpv1"><br>
 <!--
 
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
+
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
