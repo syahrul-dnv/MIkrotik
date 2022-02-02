@@ -113,9 +113,15 @@ Kemudian sudah bisa kita tambahkan IP address untuk interface bridge1 nya.<br>
 
 Konfigurasi pada router<br>
 <img src="https://drive.google.com/uc?export=view&id=105L0mmZYPOc8oM5Qxz1t09lVjklRcL7w"><br>
+Seperti kasus pertama, pada router membuat interface vlan management dan berikan ip address pada vlan tersebut.
+
+Konfigurasi pada switch<br>
+<img src="https://drive.google.com/uc?export=view&id=1rs7iCW4O12H16kWj-hgHBm1nmEDxOHS"><br>
+
+
 
 <!--
-<img src="https://drive.google.com/uc?export=view&id="><br>
+
 
 
 
