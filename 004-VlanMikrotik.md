@@ -146,15 +146,15 @@ Karena seri CSS menggunakan Switch OS, maka bisa kita konfigurasi melalui web br
 
 Untuk topologi yang kita gunakan masih sama.<br>
 <img src="https://drive.google.com/uc?export=view&id=1vAAuPWm72c2MxTBZAfFc3SL0cnMPCbsB"><br>
-
+<img src="https://drive.google.com/uc?export=view&id=1yd1J3SC3wP7nhTt4ep19kaEEuWkV0Lcm"><br>
+<img src="https://drive.google.com/uc?export=view&id=1tdq8xcx0QPfI_OD3ZludFmF9XW8_i9c9"><br>
 
 <!--
 
 
 
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
-<img src="https://drive.google.com/uc?export=view&id="><br>
+
 
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br> -->
