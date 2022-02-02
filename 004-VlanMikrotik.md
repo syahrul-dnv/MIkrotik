@@ -112,15 +112,15 @@ Kemudian sudah bisa kita tambahkan IP address untuk interface bridge1 nya.<br>
 <img src="https://drive.google.com/uc?export=view&id=113jN2HwTqo9fcLEjE89TsiCTPBiRrgXC"><br>
 
 Konfigurasi pada router<br>
-<img src="https://drive.google.com/uc?export=view&id=105L0mmZYPOc8oM5Qxz1t09lVjklRcL7w"><br>
+<img src="https://drive.google.com/uc?export=view&id=105L0mmZYPOc8oM5Qxz1t09lVjklRcL7w"><br> <!-- no 37 dlam img drive -->
 Seperti kasus pertama, pada router membuat interface vlan management dan berikan ip address pada vlan tersebut.
 
 Konfigurasi pada switch<br>
-<img src="https://drive.google.com/uc?export=view&id=1rs7iCW4O12H16kWj-hgHBm1nmEDxOHS"><br>
-<img src="https://drive.google.com/uc?export=view&id=1h_TdBAPUd0DdGHWK-D-MSLBlHiU1_6vn"><br>
+<img src="https://drive.google.com/uc?export=view&id=1rs7iCW4O12H16kWj-hgHBm1nmEDxOHS"><br> <!-- no 38 dlam img drive -->
+<img src="https://drive.google.com/uc?export=view&id=1h_TdBAPUd0DdGHWK-D-MSLBlHiU1_6vn"><br> <!-- no 39 dlam img drive -->
 
 Tambahkan konfigurasi Ingress VLAN<br>
-<img src="https://drive.google.com/uc?export=view&id=1Qpo-XdvIYPhiJIiXmx5tKZPTvHDrGZAn"><br>
+<img src="https://drive.google.com/uc?export=view&id=1Qpo-XdvIYPhiJIiXmx5tKZPTvHDrGZAn"><br> <!-- no 40 dlam img drive -->
 <!--
 
 
