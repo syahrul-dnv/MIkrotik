@@ -121,12 +121,23 @@ Konfigurasi pada switch<br>
 
 Tambahkan konfigurasi Ingress VLAN<br>
 <img src="https://drive.google.com/uc?export=view&id=1Qpo-XdvIYPhiJIiXmx5tKZPTvHDrGZAn"><br> <!-- no 40 dlam img drive -->
+
+Kemudian tambahkan konfigurasi Egress VLAN. Pada vlan id 99 tambahkan juga switch1-cpu untuk Tagged Ports nya.<br>
+<img src="https://drive.google.com/uc?export=view&id=1zmRhztekLd0m0rkdkge6X15zjwvp7FUj"><br>
+<img src="https://drive.google.com/uc?export=view&id=1dWdI8z4Z8Oa_U34O0EyVe754l2ajr5IU"><br>
+
+
+
 <!--
-
-
-
-
-
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
+<img src="https://drive.google.com/uc?export=view&id="><br>
 
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br> -->
