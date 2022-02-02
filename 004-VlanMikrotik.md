@@ -127,12 +127,13 @@ Kemudian tambahkan konfigurasi Egress VLAN. Pada vlan id 99 tambahkan juga switc
 <img src="https://drive.google.com/uc?export=view&id=1dWdI8z4Z8Oa_U34O0EyVe754l2ajr5IU"><br>
 <img src="https://drive.google.com/uc?export=view&id=1vzN2tlwP-8fhia6lPIunwgIrBGJrcCqT"><br>
 
-
+Selanjutnya tambahkan konfigurasi Switch VLAN, pada vlan management yaitu vlan 99 tambahkan switch1-cpu untuk port nya.<br>
+<img src="https://drive.google.com/uc?export=view&id=1DGbW8QbEYjXyK1cG3ETa7tGIYPkuU95g"><br>
+<img src="https://drive.google.com/uc?export=view&id=1FA5inOIEjsiu5pEsKXbFuddbyYqknTHf"><br>
+<img src="https://drive.google.com/uc?export=view&id=1bJOeWdmGkYCE1AI6uTvYp6Ovy6aguDXC"><br>
 <!--
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
-<img src="https://drive.google.com/uc?export=view&id="><br>
-<img src="https://drive.google.com/uc?export=view&id="><br>
+
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
 <img src="https://drive.google.com/uc?export=view&id="><br>
