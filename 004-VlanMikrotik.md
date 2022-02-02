@@ -149,6 +149,12 @@ Untuk topologi yang kita gunakan masih sama.<br>
 <img src="https://drive.google.com/uc?export=view&id=1yd1J3SC3wP7nhTt4ep19kaEEuWkV0Lcm"><br>
 <img src="https://drive.google.com/uc?export=view&id=1tdq8xcx0QPfI_OD3ZludFmF9XW8_i9c9"><br>
 
+Pertama, kita konfigurasikan terlebih dahulu untuk port yang menjadi trunk dan access. Untuk contoh kali ini kita menggunakan port 1 untuk trunk, port 2 untuk access vlan 11, dan port 3 untuk access vlan 13.<br>
+
+<img src="https://drive.google.com/uc?export=view&id=1-BsZdd8LDgDW_Dlp9lyeSMrfdlJa52bs"><br>
+Kemudian untuk membuat vlan management bisa kita atur di menu System.
+Tentukan "IP Address" dan "Allow From VLAN" kemudian klik apply.
+Tunggu sesaat dan seharusnya switch sudah bisa di akses. Selamat mencoba :D .
 <!--
 
 
@@ -156,5 +162,5 @@ Untuk topologi yang kita gunakan masih sama.<br>
 
 
 
-<img src="https://drive.google.com/uc?export=view&id="><br>
+
 <img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br><img src="https://drive.google.com/uc?export=view&id="><br> -->
